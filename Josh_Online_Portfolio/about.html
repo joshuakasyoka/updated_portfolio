@@ -4,38 +4,36 @@
       <link rel="stylesheet" href="stylesheet.css">
       <title>About</title>
       <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body>
-      <header>
-         <div class="projects_about">
-             <a href="./index.html">
-            <div>
-               <p>Projects</p>
-            </div>
-        </a>
-        <a href="cv.html">
-            <div>
-               <p>CV</p>
-            </div>
-        </a>
-         </div>
-         <div class="main_text">
-            <div>
-               <h1>JOSH</h1>
-            </div>
-            <div>
-               <h1 class="green">GREEN</h1>
-            </div>
-         </div>
-         <div>
-            <p style="font-weight:500">Contact</p>
-         </div>
-      </header>
-      <div class="about">
+      <nav>
+         <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Josh Green</a>
+               <a href="cv.html">CV</a>
+               <a href="about.html">About</a>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+      </nav>
+      <div class="individual_project_container">
         <section class="projects_row">
-           <div class="project"><img src="./assets/About.png"></div>
-           <div class="project"><p class="about_text" style="margin: 0px"><u>About</u><br><br><br>I am a multidisciplinary designer with an interest in connecting people through technology<br><br> I have worked on multiple projects in the social sector - most recently looking at how design, tech and education can work together to make programming more acessible. <br><br> I am most confortable conducting quantative and qualatitive research, making prototypes, illustrating and coding, but I am always interested in a creative challenge and learning new skills and technologies. <br><br> If you fancy collaborating or chatting over a mug of tea - get in touch <br><br><br><u>Contact</u><br><br><br> Phone: 07376925467 <br><br> Email: joshua.kasyoka.green@gmail.com</p></div>
+           <div class="projects"><img class='dimensions' src="./assets/About.png"></div>
+           <div class="projects"><p class="about_text" style="margin: 0px"><u>About</u><br><br><br>I am a multidisciplinary designer with an interest in connecting people through technology<br><br> I have worked on multiple projects in the social sector - most recently looking at how design, tech and education can work together to make programming more acessible. <br><br> I am most confortable conducting quantative and qualatitive research, making prototypes, illustrating and coding, but I am always interested in a creative challenge and learning new skills and technologies. <br><br> If you fancy collaborating or chatting over a mug of tea - get in touch <br><br><br><u>Contact</u><br><br><br> Phone: 07376925467 <br><br> Email: joshua.kasyoka.green@gmail.com</p></div>
         </section>
         </div>
+
+        <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+         </script>
     </body>
 </html>
